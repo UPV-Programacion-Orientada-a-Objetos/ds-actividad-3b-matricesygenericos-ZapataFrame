@@ -36,6 +36,9 @@ int main()
             matrizA->getDatos()[i][j] = value;
         }
     }
+
+    print_message("Matriz A (2x3), Tipo INT:");
+    print_matriz(*matrizA);
     print_message(">> Redimensionando Matriz A <<");
     matrizA->redimensionar(3, 3);
     print_message("Redimensionando A a 3x3. Datos conservados:");
@@ -56,6 +59,7 @@ int main()
             matrizB->getDatos()[i][j] = value;
         }
     }
+    print_message("Matriz B (3x2), Tipo FLOAT:");
     print_matriz(*matrizB);
     MatrizDinamica<float> *matrizC = MatrizDinamica<float>::multiplicar(*matrizA, *matrizB);
 
