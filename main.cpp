@@ -77,10 +77,9 @@ void print_matriz(MatrizDinamica<T> matriz)
 {
     for (int i = 0; i < matriz.getFilas(); i++)
     {
+        std::cout << "|";
         for (int j = 0; j < matriz.getColumnas(); j++)
         {
-            if (j != matriz.getColumnas() - 1)
-                std::cout << "|";
             std::cout << std::setw(6) << matriz.getDatos()[i][j] << "|";
         }
         std::cout << std::endl;
